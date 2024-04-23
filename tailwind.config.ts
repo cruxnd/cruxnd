@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         gold: {
-          1: '#FFC233',
+          1: '#D4A63B',
         },
         blue: {
           1: '#011B3D'

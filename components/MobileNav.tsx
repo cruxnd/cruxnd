@@ -14,7 +14,7 @@ export default function MobileNav() {
 
 
   return (
-    <nav className="flex justify-between items-center lg:hidden px-6 py-4 relative overflow-x-hidden">
+    <nav className="flex justify-between items-center lg:hidden px-6 py-4 relative">
       <Link href="/" className="z-20">
         <Image
           src="/images/logo.png"
@@ -33,7 +33,7 @@ export default function MobileNav() {
         onClick={handleShowMenu}
       />
 
-      <div className={`absolute z-10 w-screen h-screen bg-white px-6 py-4 duration-300 ${isMenuOpen === true ? 'top-0 left-0' : 'top-full left-full'}`}>
+      <div className={`absolute z-10 w-screen h-screen bg-white px-6 py-4 duration-300 ${isMenuOpen === true ? 'top-0 left-0' : 'top-full left-full hidden'}`}>
 
       </div>
     </nav>

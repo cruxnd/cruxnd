@@ -8,8 +8,8 @@ export default function Navbar() {
         <Image
           src="/images/logo.png"
           alt="logo"
-          width={70}
-          height={70}
+          width={50}
+          height={50}
           className=""
         />
       </Link>
