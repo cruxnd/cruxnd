@@ -14,7 +14,7 @@ export default function MobileNav() {
 
 
   return (
-    <nav className="flex justify-between items-center lg:hidden px-6 py-4 relative">
+    <nav className="flex justify-between items-center lg:hidden px-6 md:px-10 py-4 md:py-6 relative">
       <Link href="/" className="z-20">
         <Image
           src="/images/logo.png"
