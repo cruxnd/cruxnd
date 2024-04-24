@@ -11,7 +11,7 @@ export default function AboutHero() {
         className="h-full"
       />
 
-      <div className="absolute top-20 left-[200px] w-[250px] px-4 py-6 border border-gold-1 bg-[#f1e3c0] rounded-full text-center text-sm">
+      <div className="absolute top-[150px] left-[200px] w-[250px] px-4 py-6 border border-gold-1 bg-[#f1e3c0] rounded-full text-center text-sm">
         Lorem ipsum dolor sit amet. Lorem, ipsum.
       </div>
 
@@ -19,11 +19,11 @@ export default function AboutHero() {
         Lorem ipsum dolor sit amet. Lorem, ipsum dolor.
       </div>
 
-      <div className="absolute bottom-[200px] right-28 w-[250px] px-4 py-6 border border-green-400 bg-[#a2f38b] rounded-full  text-center text-sm">
+      <div className="absolute bottom-[250px] right-28 w-[250px] px-4 py-6 border border-green-400 bg-[#a2f38b] rounded-full  text-center text-sm">
         Lorem ipsum dolor sit, amet consectetur adipisicing.
       </div>
 
-      <div className="absolute bottom-[120px] left-28 w-[250px] px-4 py-6 border border-purple-400 bg-[#cb91ee] rounded-full  text-center text-sm">
+      <div className="absolute bottom-[180px] left-28 w-[250px] px-4 py-6 border border-purple-400 bg-[#cb91ee] rounded-full  text-center text-sm">
         Lorem ipsum dolor, sit amet consectetur adi.
       </div>
     </div>
