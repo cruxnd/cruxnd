@@ -3,34 +3,34 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="px-20 h-[100px] hidden lg:flex justify-between items-center">
-      <Link href="/">
+    <div className="px-20 h-[85px] w-full sticky top-0 z-10 hidden lg:flex justify-between items-center backdrop-blur-md bg-transparent">
+      <Link href="/" className="bg-transparent">
         <Image
           src="/images/logo.png"
           alt="logo"
           width={50}
           height={50}
-          className=""
+          className="bg-transparent "
         />
       </Link>
-      <div className="uppercase">
-        <Link href="/" className="mr-12 ">
+      <div className="bg-transparent">
+        <Link href="/" className="mr-12 bg-transparent">
           Home
         </Link>
-        <Link href="/about_us" className="mr-12 ">
+        <Link href="/about_us" className="mr-12 bg-transparent">
           About
         </Link>
-        <Link href="/program" className="mr-12 ">
+        <Link href="/program" className="mr-12 bg-transparent">
           Our Program
         </Link>
-        <Link href="/support" className="mr-12 ">
+        <Link href="/support" className="mr-12 bg-transparent">
           Support
         </Link>
-        <Link href="/contact" className=" ">
+        <Link href="/contact" className="bg-transparent">
           Contact Us
         </Link>
       </div>
-      <div>
+      <div className="bg-transparent">
         <button className="mr-8">
           Login
         </button>
