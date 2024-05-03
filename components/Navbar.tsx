@@ -8,36 +8,36 @@ export default function Navbar() {
         <Image
           src="/images/logo.png"
           alt="logo"
-          width={50}
+          width={55}
           height={50}
           className="bg-transparent "
         />
       </Link>
       <div className="bg-transparent">
-        <Link href="/" className="mr-12 bg-transparent">
+        <Link href="/" className="mr-20 bg-transparent">
           Home
         </Link>
-        <Link href="/about_us" className="mr-12 bg-transparent">
+        <Link href="/about_us" className="mr-20 bg-transparent">
           About
         </Link>
-        <Link href="/program" className="mr-12 bg-transparent">
+        <Link href="/program" className="mr-20 bg-transparent">
           Our Program
         </Link>
-        <Link href="/support" className="mr-12 bg-transparent">
+        <Link href="/support" className="mr-20 bg-transparent">
           Support
         </Link>
         <Link href="/contact" className="bg-transparent">
           Contact Us
         </Link>
       </div>
-      <div className="bg-transparent">
+      {/* <div className="bg-transparent">
         <button className="mr-8">
           Login
         </button>
         <button className="px-6 py-2 rounded-full bg-blue-1 text-white">
           Signup
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }
