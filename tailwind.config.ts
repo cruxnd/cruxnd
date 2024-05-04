@@ -13,7 +13,7 @@ const config: Config = {
           1: '#D4A63B',
         },
         blue: {
-          1: '#011B3D'
+          1: '#09001B'
         },
       },
       backgroundImage: {

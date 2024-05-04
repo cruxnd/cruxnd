@@ -15,79 +15,82 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={onSubmit}
-      className="w-[900px] h-[600px] backdrop-blur-sm border border-white bg-transparent rounded-3xl p-20"
+      className="px-6 md:px-12 lg:px-16 py-12 lg:py-12 w-full lg:w-[900px] backdrop-blur-sm lg:border lg:border-white bg-transparent rounded-3xl"
     >
-      <div className="flex justify-between mb-12">
-        <div className="lg:w-[300px] flex flex-col relative">
+      <h1 className="text-3xl mb-8">Send us a message</h1>
+      <div className="flex flex-col md:flex-row justify-between mb-6">
+        <div className="md:w-[300px] flex flex-col relative mb-8 lg:mb-0">
           <label
-            htmlFor="name"
-            className="text-sm absolute -top-[9px] left-6 pointer-events-none"
+            htmlFor="firstName"
+            className="text-sm pointer-events-none"
           >
             First Name
           </label>
           <input
             type="text"
-            className="border border-white px-6 py-2 rounded-lg"
+            className="bg-transparent border border-white outline-none px-6 py-3 rounded-lg focus:border-2"
             {...register("firstName")}
           />
         </div>
 
-        <div className="lg:w-[300px] flex flex-col relative">
+        <div className="md:w-[300px] flex flex-col relative">
           <label
             htmlFor="name"
-            className="text-sm absolute -top-[9px] left-6 pointer-events-none"
+            className="text-sm   left-6 pointer-events-none"
           >
             Last Name
           </label>
           <input
             type="text"
-            className="border border-white px-6 py-2 rounded-lg"
+            className="bg-transparent border border-white outline-none focus:border-2 px-6 py-3 rounded-lg"
             {...register("lastName")}
           />
         </div>
       </div>
 
-      <div className="flex justify-between mb-12">
-        <div className="lg:w-[300px] flex flex-col relative">
+      <div className="flex flex-col md:flex-row justify-between mb-6">
+        <div className="md:w-[300px] flex flex-col relative mb-8 lg:mb-0">
           <label
             htmlFor="name"
-            className="text-sm absolute -top-[9px] left-6 pointer-events-none"
+            className="text-sm   left-6 pointer-events-none"
           >
             Email
           </label>
           <input
             type="text"
-            className="border border-white px-6 py-2 rounded-lg"
+            className="bg-transparent border border-white outline-none focus:border-2 px-6 py-3 rounded-lg"
             {...register("email")}
           />
         </div>
 
-        <div className="lg:w-[300px] flex flex-col relative">
+        <div className="md:w-[300px] flex flex-col relative">
           <label
             htmlFor="name"
-            className="text-sm absolute -top-[9px] left-6 pointer-events-none"
+            className="text-sm   left-6 pointer-events-none"
           >
             Phone Number
           </label>
           <input
             type="text"
-            className="border border-white bg-transparent px-6 py-2 rounded-lg"
+            className="border border-white outline-none focus:border-2 bg-transparent px-6 py-3 rounded-lg"
             {...register("number")}
           />
         </div>
       </div>
 
-      <div className="relative bg-transparent">
+      <div className="relative bg-transparent mb-8">
         <label
-            htmlFor="name"
-            className="text-sm absolute -top-[9px] left-6 pointer-events-none"
-          >
-            Message
-          </label>
-          <textarea className="border border-white rounded-xl w-full h-[200px] bg-transparent">
+          htmlFor="name"
+          className="text-sm   left-6 pointer-events-none"
+        >
+          Message
+        </label>
+        <textarea className="border border-white outline-none focus:border-2 rounded-xl w-full h-[200px] bg-transparent px-6 py-3"></textarea>
+      </div>
 
-          </textarea>
-        </div>
+      <div className="bg-transparent text-right">
+        <button className="px-6 py-3 border-2 rounded-xl">Send Message</button>
+      </div>
     </form>
   );
 }
