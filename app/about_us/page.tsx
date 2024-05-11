@@ -1,4 +1,5 @@
 import AboutHero from "@/components/AboutHero";
+import Faqs from "@/components/Faqs";
 import Who from "@/components/Who";
 
 export default function AboutUsPage() {
@@ -6,6 +7,7 @@ export default function AboutUsPage() {
     <div>
       <AboutHero />
       <Who />
+      <Faqs />
     </div>
   )
 }
