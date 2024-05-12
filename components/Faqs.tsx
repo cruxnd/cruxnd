@@ -56,14 +56,14 @@ export default function Faqs() {
   };
 
   return (
-    <div className="px-6 md:px-12 lg:px-24 lg:py-20 flex flex-col lg:flex-row">
-      <div className="lg:w-1/2 lg:mr-20">
-        <h1 className="text-3xl font-bold mb-4">Frequently Asked Questions</h1>
+    <div className="px-6 py-16 md:px-12 lg:px-24 lg:py-20 flex flex-col lg:flex-row justify-between">
+      <div className="lg:w-1/2 lg:mr-20 mb-16 lg:mb-0">
+        <h1 className="text-3xl font-bold mb-8">Frequently Asked Questions</h1>
         <div className="">
           {faqData.map((item, index) => (
             <div
               key={index}
-              className="border-b pb-4"
+              className="border-b pb-4 mb-4"
               onClick={() => toggleAnswer(index)}
             >
               <div className="font-semibold">{item.question}</div>
@@ -76,14 +76,12 @@ export default function Faqs() {
           ))}
         </div>
       </div>
-      <div className="w-1/2">
       <Image 
         src="/images/questions.jpg"
         alt="Questions"
         width={500}
         height={500}
       />
-      </div>
     </div>
   );
 }
